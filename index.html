@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bmi Calculator</title>
+</head>
+<body>
+    <main id="container">
+        <!-- Main image-->
+        <section id="img">
+            <img src="assets/images/illustration.svg" alt="">
+        </section>
+
+
+        <section id="Calculator">
+
+            <form id="form">
+                <h1 id="title">BMI - Calculator</h1>
+
+                <div class="input-box">
+                    <label for="weight">Your Weight</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="number" id="weight" name="weight" required>
+                    <span>Kg</span>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Your Height</label>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input type="number" id="height" name="height" required>
+                    <span>Height</span>
+                </div>
+
+                <button id="calculate">
+                    Calculate
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Your BMI</span>
+                    </div>
+
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="more_info">
+                <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                    More info
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>   
+        </section>
+    </main>
+</body>
+</html>
